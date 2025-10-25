@@ -1,4 +1,3 @@
-
 @import url(fonts/sylfaen.ttf);
 
 body {
@@ -42,7 +41,7 @@ footer {
 #book-list {
     padding: 0 2rem;
 }
-.book {
+.book-entry {
     padding: 1rem;
     border-radius: 10px;
     max-width: 700px;
@@ -64,6 +63,10 @@ footer {
 .book p {
     padding-left: 20px;
 }
+
+.date {
+    font-style: italic;
+}
 .book img {
     max-width: 40%;
     display: block;
@@ -81,15 +84,29 @@ footer {
         justify-content: right;
     }
 
-    #book-list {
+    .book-entry {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 0.5fr 2.5fr; /* .info is smaller */
         justify-content: center;
+        max-width: 70%;
+        margin: 20px auto;
+        gap: 0.5em;
     }
 
     .info {
-        border-right: #efc8a0 2px solid;
-        padding-right: 1rem;
+        max-width: 100%;
+        text-align: right;
+        padding-right: 0.5em;
+        margin-left: 0;
+    }
+
+    .book {
+        border-left: #efc8a0 2px solid;
+        padding-left: 0.5em;
+    }
+
+    .book h2 {
+        text-align: left;
     }
 
     .book img {
@@ -98,4 +115,3 @@ footer {
         max-width: 100%;
     }
 }
-          
