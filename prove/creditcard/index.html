@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Form</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/1.0.8/reseter.min.css" integrity="sha512-w7sMEM5yzmuVP9ic9zpCLk/+whwrrhkH5g83x0wi5DEPo1y+/JniMmCVfbtjw5JipFpcCb4gyF2xLES6tc+TxA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="creditcard.css">
+  <script src="creditcard.js" defer></script>
+</head>
+<body>
+  <header><h1>Checkout</h1></header>
+  <main>
+    <section class="errors" aria-live="polite"></section>
+
+    <div class="card-stack">
+      <div class="card-container card-back" aria-label="Back of card">
+        <div class="magnetic-strip" aria-hidden="true"></div>
+        <div class="cvv-row">
+          <label for="cvv">CVC/CVV</label>
+          <input id="cvv" name="cvv" type="text" placeholder="xxx" maxlength="4" required form="checkoutForm">
+        </div>
+      </div>
+
+      <div class="card-container card-front" aria-label="Front of card">
+        <div class="card-header">
+          <span class="order-total">TOTAL: $199</span>
+          <span class="card-emoji" title="Credit Card">💳</span>
+        </div>
+
+        <form id="checkoutForm" action="#" method="get">
+          <div class="form-row">
+            <label for="creditCardNumber">CARD NUMBER</label>
+            <input id="creditCardNumber" name="creditCardNumber" type="text" inputmode="numeric" pattern="(?:\d{4}[ -]?){3}\d{4}" placeholder="1234 5678 9101 1020" required>
+          </div>
+
+          <div class="form-row two-col">
+            <div class="form-group holder-group">
+              <label for="fullName">CARD HOLDER</label>
+              <input id="fullName" name="fullName" type="text" placeholder="John Doe" required>
+            </div>
+            <div class="form-group exp-group">
+              <label for="month">EXPIRATION</label>
+              <div class="expiration-fields">
+                <input id="month" name="expMonth" type="text" placeholder="MM" maxlength="2" inputmode="numeric" required>
+                <input id="year" name="expYear" type="text" placeholder="YY" maxlength="2" inputmode="numeric" required>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="stack-footer">
+      <button class="submit-btn" type="submit" form="checkoutForm">Submit</button>
+    </div>
+  </main>
+</body>
+</html>
