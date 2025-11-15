@@ -55,7 +55,7 @@ hr{
         flex: 0 1 250px;
     }
 
-    media-card-content {
+    .media-card-content {
         flex: 0 1 60ch;
     }
 }
