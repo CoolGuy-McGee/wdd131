@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/1.0.8/reseter.min.css" integrity="sha512-w7sMEM5yzmuVP9ic9zpCLk/+whwrrhkH5g83x0wi5DEPo1y+/JniMmCVfbtjw5JipFpcCb4gyF2xLES6tc+TxA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="styles.css"/>
+    <script src="recipes.js" defer></script>
 
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
@@ -36,7 +37,7 @@
             <h1>RecipeBook</h1>
         </div>
         <form class="search-bar" action="#" method="get" role="search">
-            <input type="search" id="recipe-search" name="q" placeholder="Find a recipe" aria-label="Find a recipe" />
+            <input type="search" id="recipe-search" name="q" placeholder="Find a recipe" aria-label="Find a recipe"/>
             <button type="submit" id="search-button" aria-label="Search recipes">
                 <img src="images/search.svg" alt="Search recipes">
             </button>
@@ -44,28 +45,8 @@
         <hr>
     </header>
     <main>
-      <section class="recipe-card-container">
-        <section class="recipe-card">
-            <div class="recipe-card-image">
-                <img src="images/apple-crisp.jpg" alt="A delicious apple crisp dessert."> 
-            </div>
-            <div class="recipe-card-content">
-                <p class="tags">dessert</p>
-                <h2>Apple Crisp</h2>
-                <span
-                class="rating"
-                role="img"
-                aria-label="Rating: 4 out of 5 stars"
-                >
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p>This apple crisp is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-            </div>
-        </section>
+      <section id="recipe-card-container">
+        <!-- Recipe cards will be dynamically inserted here -->
       </section>
     </main>
     <footer>

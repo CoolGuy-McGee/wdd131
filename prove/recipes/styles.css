@@ -12,7 +12,7 @@
 
 body {
     font-size: 20px;
-    max-width: 1280px;
+    max-width: 900px;
     margin: auto;
     padding: 1em;
 }
@@ -38,6 +38,14 @@ header img {
 header {
     text-align: center;
     align-content: center;
+}
+
+.icon-star, .icon-star-empty {
+    font-size: 35px;
+}
+
+.icon-star {
+    color: #FFD700;
 }
 
 .search-bar {
@@ -82,6 +90,7 @@ img {
 }
 
 .tags {
+    display: inline-block;
     border: 1px solid #858585;
     border-radius: 2px;
     max-width: fit-content;
