@@ -1,0 +1,81 @@
+#data {
+    background-color: var(--primary-color);
+    color: var(--paragraph-color-on-color);
+    margin: auto;
+    max-width: fit-content;
+    padding: 5px;
+}
+
+#wiki-entry {
+    margin: auto;
+    max-width: fit-content;
+    padding: 1.5rem;
+}
+
+#data p {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#data img {
+    max-width: 60%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.icon-star, .icon-star-empty {
+    font-size: 25px;
+    color: var(--accent1-color);
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 10px;
+    text-align: left;
+}
+
+.game-card img {
+    max-width: 100px;
+    margin: auto;
+}
+
+#game-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+#game-list > * {
+    flex: 1 0 10px;
+}
+
+@media screen and (min-width: 700px){
+    #wiki-sections {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        padding: 1em;
+    }
+
+    #wiki-entry {
+        max-width: 60%;
+    }
+
+    #game-list {
+        flex-direction: row;
+    }
+
+    #game-list > * {
+        flex: 1 1 350px;
+    }
+}

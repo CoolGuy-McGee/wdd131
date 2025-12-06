@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #1d1d1d;
+  --secondary-color: #968d8d;
+  --accent1-color: #e43618;
+  --accent2-color: #ffffff;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Press Start 2P";
+  --paragraph-font: "Space Mono", monospace;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(--primary-color); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(--primary-color); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--primary-color);
+  --nav-hover-link-color: var(--accent2-color);
+  --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    color: var(--paragraph-color-on-white);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    max-width: fit-content;
+    font-size: 10px;
+    margin: auto;
+}
+
+.logo {
+    max-width: 120px;
+    margin-left: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+}
+
+nav a {
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 15px;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  text-decoration: none;
+}
+
+nav a:focus {
+    outline: none;
+}
+
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
+    font-size: 23px;
+    font-family: var(--heading-font);
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menu-btn:hover {
+    color: var(--nav-hover-link-color);
+}
+
+.menu-btn:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 700px){
+
+    #logo {
+        font-size: 15px;
+    }
+    
+    .logo {
+        max-width: 170px;
+    }
+
+    .hide {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+}
