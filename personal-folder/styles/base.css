@@ -32,9 +32,9 @@
   --paragraph-color-on-white: var(--primary-color); /* paragraph text on a white background */
   --paragraph-color-on-color: white; /* paragraph text on a colored background */
   --paragraph-background-color: var(--primary-color);
-  --nav-link-color: var(--accent1-color);
+  --nav-link-color: var(--accent2-color);
   --nav-background-color: var(--primary-color);
-  --nav-hover-link-color: var(--accent2-color);
+  --nav-hover-link-color: var(--accent1-color);
   --nav-hover-background-color: var(--primary-color);
 }
 
@@ -47,13 +47,13 @@ body {
 
 h1 {
     font-family: var(--heading-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
     font-size: 1.35em;
 }
 
 h2 {
     font-family: var(--heading-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 #logo {

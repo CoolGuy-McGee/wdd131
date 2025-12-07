@@ -203,12 +203,6 @@ function renderList() {
     }
 }
 
-// function init() {
-// 	for (let i = 0; i < games.length; i++) {
-// 		rendergame(games[i]);
-//     }
-// }
-
 function init() {
     rendergame(games[0]);
 }
