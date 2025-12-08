@@ -29,14 +29,9 @@
     padding: 10px;
 }
 
-#data .icon-star, #data .icon-star-empty {
-    font-size: 25px;
-    color: var(--accent1-color);
-}
-
 .icon-star, .icon-star-empty {
     font-size: 25px;
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 h2 {
@@ -68,7 +63,7 @@ h2 {
     flex: 1 0 10px;
 }
 
-.game-button, .game-button h2, .game-button .icon-star, .game-button .icon-star-empty {
+.game-button, .game-button h2 {
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color);
     border: none;
