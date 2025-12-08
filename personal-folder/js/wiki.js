@@ -94,7 +94,7 @@ const games = [
         image: 'images/covers/smb3.png',
         alt: "Super Mario Bros. 3 Cover Art",
         title: "Super Mario Bros. 3",
-        description: "This platformer features Mario and Luigi as they embark on a quest to save Princess Toadstool and the Mushroom World from Bowser and his Koopalings.",
+        description: "This platformer is the third entry in the Super Mario. Bros series and is considered the best by many.",
         releaseDate: '1988 (JP), 1990 (NA)',
         entry: "Super Mario Bros. 3 is a classic platformer that introduced many new gameplay mechanics and power-ups to the Mario series. Players can explore various worlds, each with its own unique theme and challenges. The game is known for its tight controls, inventive level design, and memorable music. It remains one of the best-selling video games of all time and is often regarded as one of the greatest video games ever made.",
         review: "I gave this game a 5 out of 5 because it is an exceptional platformer that builds upon the foundation laid by its predecessor. The introduction of new power-ups, such as the Super Leaf and Tanooki Suit, adds depth and variety to the gameplay. The level design is creative and diverse, offering players a wide range of challenges and environments to explore. The addition of an overworld map allows for non-linear progression, giving players the freedom to choose their path. Overall, Super Mario Bros. 3 is a timeless classic that continues to captivate players with its charm and innovation. This game has me coming back to it again and again.",

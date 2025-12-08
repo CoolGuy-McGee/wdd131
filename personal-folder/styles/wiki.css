@@ -61,6 +61,7 @@ h2 {
 
 #game-list > * {
     flex: 1 0 10px;
+    margin: auto;    
 }
 
 .game-button, .game-button h2 {
