@@ -12,6 +12,10 @@
     padding: 1.5rem;
 }
 
+#wiki-entry p, #wiki-entry h2 {
+    padding: 1em;
+}
+
 #data p {
     display: block;
     padding: 10px;
@@ -62,6 +66,16 @@ h2 {
 
 #game-list > * {
     flex: 1 0 10px;
+}
+
+.game-button, .game-button h2, .game-button .icon-star, .game-button .icon-star-empty {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 700px){

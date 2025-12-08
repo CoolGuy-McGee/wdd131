@@ -175,7 +175,7 @@ function entryTemplate(game) {
 }
 
 function gameListTemplate(game) {
-    return `<button onclick="updateGameDetail('${game.code}')">
+    return `<button class="game-button" onclick="updateGameDetail('${game.code}')">
                 <section class="game-card">
                     <div class="game-card-image">
                         <img src="${game.image}" alt="${game.alt}"> 
